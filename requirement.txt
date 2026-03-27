@@ -1,0 +1,10 @@
+sentence-transformers 
+faiss-cpu 
+groq 
+numpy
+keybert
+scikit-learn
+fastapi
+uvicorn
+email-validator
+python-dotenv
