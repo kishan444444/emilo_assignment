@@ -116,21 +116,23 @@ FastAPI Response
 project/
 │
 ├── app/
-│ ├── main.py # FastAPI entry point + routes + HTML UI
-│ ├── recommender.py # Core recommendation logic
-│ ├── faiss_db.py # FAISS index & search
-│ ├── llm.py # LLM query understanding + explanation
-│ ├── utils.py # Helper functions (scoring, similarity)
-│ ├── schemas.py # API schemas (Pydantic)
+│   ├── main.py          # FastAPI entry point, route definitions, and HTML UI serving
+│   ├── recommender.py   # Core orchestrator: coordinates LLM intent and FAISS search logic
+│   ├── faiss_db.py      # FAISS index management: loading and querying the vector database
+│   ├── llm.py           # LLM integration for query parsing and recommendation blurbs
+│   ├── utils.py         # Utility functions for scoring and data normalization
+│   ├── schemas.py       # Pydantic models for request/response validation
 │
 ├── data/
-│ └── products.json # Product dataset
+│   └── products.json    # The primary product dataset
 │
-├── Notebook files 
-├  └──  data_preperation.ipynb # Data cleaning + tag generation 
-│  └──  model_training.ipynb # Embedding + FAISS experiments
-├── requirements.txt # Dependencies
-├── README.md # Documentation
+├── Notebook files/
+│   ├── data_preparation.ipynb # Data cleaning and tag generation pipeline
+│   └── model_training.ipynb   # Embedding generation and FAISS indexing experiments
+│
+├── requirements.txt     # Project dependencies
+└── README.md            # Project documentation
+
 
 ---
 
