@@ -112,25 +112,31 @@ LLM → Explanation
 FastAPI Response  
 
 ---
-##  Project Structure 
+
+## Project Structure
+
+```bash
 project/
 │
 ├── app/
-│ ├── main.py # FastAPI entry point + routes + HTML UI
-│ ├── recommender.py # Core recommendation logic
-│ ├── faiss_db.py # FAISS index & search
-│ ├── llm.py # LLM query understanding + explanation
-│ ├── utils.py # Helper functions (scoring, similarity)
-│ ├── schemas.py # API schemas (Pydantic)
+│   ├── main.py              # FastAPI entry point, routes, UI serving
+│   ├── recommender.py      # Core orchestrator
+│   ├── faiss_db.py         # FAISS index management
+│   ├── llm.py              # LLM integration
+│   ├── utils.py            # Helper functions
+│   ├── schemas.py          # Pydantic models
 │
 ├── data/
-│ └── products.json # Product dataset
+│   └── products.json       # Dataset
 │
-├── Notebook files 
-├  └──  data_preperation.ipynb # Data cleaning + tag generation 
-│  └──  model_training.ipynb # Embedding + FAISS experiments
-├── requirements.txt # Dependencies
-├── README.md # Documentation
+├── notebooks/
+│   ├── data_preparation.ipynb
+│   └── model_training.ipynb
+│
+├── requirements.txt
+└── README.md
+```
+
 
 ---
 
